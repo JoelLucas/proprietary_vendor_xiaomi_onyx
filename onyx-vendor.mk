@@ -1340,7 +1340,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/onyx/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/xiaomi/onyx/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/xiaomi/onyx/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
-    vendor/xiaomi/onyx/proprietary/product/etc/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
     vendor/xiaomi/onyx/proprietary/recovery/root/lib/firmware/o10u/novatek_nt38771_o10u_fw_csot.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/o10u/novatek_nt38771_o10u_fw_csot.bin \
     vendor/xiaomi/onyx/proprietary/recovery/root/lib/firmware/o10u/novatek_nt38771_o10u_fw_tm.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/o10u/novatek_nt38771_o10u_fw_tm.bin \
     vendor/xiaomi/onyx/proprietary/recovery/root/vendor/bin/touch_report_debug:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/bin/touch_report_debug \
@@ -1354,7 +1353,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/onyx/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/xiaomi/onyx/proprietary/system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.qccsyshal_aidl-service.rc \
     vendor/xiaomi/onyx/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
-    vendor/xiaomi/onyx/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/xiaomi/onyx/proprietary/system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.qcc.vendor_qcc.xml \
     vendor/xiaomi/onyx/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/xiaomi/onyx/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
@@ -2317,6 +2315,7 @@ PRODUCT_PACKAGES += \
     libcom.xiaomi.ecoenginemonitor \
     libcom.xiaomi.eventcallback \
     libcom.xiaomi.grallocutils \
+    libcom.xiaomi.ionutils \
     libcom.xiaomi.mawutils \
     libcom.xiaomi.mawutilsold \
     libcom.xiaomi.metadatautils \
@@ -3243,8 +3242,6 @@ PRODUCT_PACKAGES += \
     TimeService \
     com.qualcomm.qti.gpudrivers.sun.api35 \
     uimgbaservice \
-    HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
-    HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
     AtFwd2 \
     FrameworksUtilsSysService \
     PowerOffAlarm \
@@ -3259,7 +3256,6 @@ PRODUCT_PACKAGES += \
     uimgbalibrary \
     uimgbamanagerlibrary \
     uimservicelibrary \
-    com.android.hotwordenrollment.common.util \
     qcrilhook \
     vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.ims.connection-V1.0-java \
